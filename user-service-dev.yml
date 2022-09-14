@@ -26,17 +26,10 @@ feign:
 hystrix:
   dashboard:
     proxy-stream-allow-list: "localhost"
-    
-
           
-management:
-   endpoints: 
-     web:
-       exposure: 
-         include: "*" 
          
 management:
         endpoints:
             web:
                  exposure:
-                     include: refresh
+                     include: "*"
