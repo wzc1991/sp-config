@@ -19,11 +19,11 @@ eureka:
               defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
       
 zuul:
-  routes:
-      item-service: /item-service/**
-      user-service: /user-service/**
-      order-service: /order-service/**
-  retryable: true #降级开启默认是关闭状态爱
+    routes:
+        item-service: /item-service/**
+        user-service: /user-service/**
+        order-service: /order-service/**
+        retryable: true #降级开启默认是关闭状态爱
 
          
 ribbon:    MaxAutoRetries: 1    
@@ -33,14 +33,6 @@ item-service:
          MaxAutoRetriesNextServer: 2
          
          
-         
-hystrix:
- command:
-  default:
-   execution:
-    isolation:
-     thread:
-      timeoutInMilliseconds: 500
       
 management:
  endpoints:
