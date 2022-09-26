@@ -26,13 +26,6 @@ zuul:
         retryable: fasle #降级开启默认是关闭状态爱
 
          
-ribbon:    MaxAutoRetries: 1    
-    
-item-service:
-    ribbon:
-         MaxAutoRetriesNextServer: 2
-         
-         
       
 management:
  endpoints:
