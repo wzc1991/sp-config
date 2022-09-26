@@ -23,7 +23,7 @@ zuul:
         item-service: /item-service/**
         user-service: /user-service/**
         order-service: /order-service/**
-        retryable: true #降级开启默认是关闭状态爱
+        retryable: fasle #降级开启默认是关闭状态爱
 
          
 ribbon:    MaxAutoRetries: 1    
